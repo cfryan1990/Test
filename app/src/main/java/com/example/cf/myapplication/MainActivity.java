@@ -70,6 +70,7 @@ public class MainActivity extends AppCompatActivity {
                         } catch (InterruptedException e) {
                             e.printStackTrace();
                         }
+                        //调用apicloud接口,封装请求为 GET "https://d.apicloud.com/mcm/api/banner"
                         Resource resource = new Resource("A6054717694420","6BE6490A-3EF2-F9D8-3C42-68D2DA9C7FF8","https://d.apicloud.com");
                         JSONObject jsonObject = resource.getObjects("banner");
                         Message msg = new Message();
